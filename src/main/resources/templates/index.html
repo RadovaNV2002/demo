@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" th:with="lang=${#locale.language}" th:lang="${lang}">
 
-<head th:replace="pages/main :: htmlhead"/>
+<head th:replace="templates/main :: htmlhead"/>
 
 <body>
 
-<nav th:replace="pages/main :: navigation" />
+<nav th:replace="templates/main :: navigation" />
 
 <div class="container">
     <div class="row">
@@ -13,6 +13,6 @@
     </div>
 </div>
 
-<div th:replace="pages/main :: footer"></div>
+<div th:replace="templates/main :: footer"></div>
 </body>
 </html>
